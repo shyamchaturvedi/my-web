@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Gaur Commerce Classes</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Merriweather:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="/">
+                    <img src="images/logo.png" alt="GCC Logo"
+                        style="height: 40px; vertical-align: middle; margin-right: 10px;">
+                    Gaur Commerce Classes
+                </a>
+            </div>
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="/" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="/about" class="nav-link">About Us</a></li>
+                    <li class="nav-item"><a href="/courses" class="nav-link active">Courses</a></li>
+                    <li class="nav-item"><a href="/faculty" class="nav-link">Faculty</a></li>
+                    <li class="nav-item"><a href="/contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <header class="page-header">
+        <div class="container">
+            <h1>Our Courses</h1>
+            <p>Comprehensive Programs for every stage of your Commerce Journey</p>
+        </div>
+    </header>
+
+    <section class="section courses-page">
+        <div class="container">
+            <!-- Filter Buttons: Java/JS functionality triggers here -->
+            <div class="course-filters">
+                <button class="filter-btn active" data-filter="all">All Courses</button>
+                <button class="filter-btn" data-filter="school">Class 11 & 12</button>
+                <button class="filter-btn" data-filter="college">B.Com & M.Com</button>
+                <button class="filter-btn" data-filter="pro">Professional (CA/CS)</button>
+            </div>
+
+            <div class="courses-grid" id="courseGrid">
+                <!-- School -->
+                <div class="course-card" data-category="school">
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <h3>Class 11 (CBSE/ISC)</h3>
+                    <p>Accounts, Economics, BST. Foundation building for future success.</p>
+                </div>
+                <div class="course-card" data-category="school">
+                    <div class="icon"><i class="fas fa-book-reader"></i></div>
+                    <h3>Class 12 (CBSE/ISC)</h3>
+                    <p>Board Exam focused preparation with mock tests and revision series.</p>
+                </div>
+
+                <!-- College -->
+                <div class="course-card" data-category="college">
+                    <div class="icon"><i class="fas fa-university"></i></div>
+                    <h3>B.Com (Hons/Prog)</h3>
+                    <p>Calculus, Corporate Accounting, and Financial Management for University exams.</p>
+                </div>
+                <div class="course-card" data-category="college">
+                    <div class="icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>M.Com Entrance</h3>
+                    <p>Preparation for top university entrance exams like LU, DU, and BHU.</p>
+                </div>
+
+                <!-- Professional -->
+                <div class="course-card" data-category="pro">
+                    <div class="icon"><i class="fas fa-briefcase"></i></div>
+                    <h3>CA Foundation</h3>
+                    <p>Complete coaching for all 4 papers with expert faculty.</p>
+                </div>
+                <div class="course-card" data-category="pro">
+                    <div class="icon"><i class="fas fa-chart-line"></i></div>
+                    <h3>CS Executive</h3>
+                    <p>Detailed conceptual study for Company Secretary aspirations.</p>
+                </div>
+                <div class="course-card" data-category="pro">
+                    <div class="icon"><i class="fas fa-calculator"></i></div>
+                    <h3>CMA Foundation</h3>
+                    <p>Cost & Management Accountant preparation track.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <p>&copy; 2024 Gaur Commerce Classes.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
